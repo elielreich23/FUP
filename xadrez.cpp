@@ -7,4 +7,4 @@ if((linha % 2 == 0 && coluna % 2 == 0  )|| (linha % 2 == 1 && coluna % 2 == 1  )
     0
 }
 
-*//
+*/
