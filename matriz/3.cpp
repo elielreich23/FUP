@@ -2,7 +2,7 @@
 //@012 L2 - Deu a louca no Imperador!
 using namespace std;
 
-void ler_matriz(char matriz[][100], int no_linhas, int no_colunas)
+void ler_matriz(char matriz[][5], int no_linhas, int no_colunas)
 {
     for (int i = 0; i < no_linhas; i++)
     {
@@ -13,7 +13,7 @@ void ler_matriz(char matriz[][100], int no_linhas, int no_colunas)
     }
 }
 
-void imprimir_matriz(char matriz[][100], int no_linhas, int no_colunas)
+void imprimir_matriz(char matriz[][5], int no_linhas, int no_colunas)
 {
     for (int i = 0; i < no_linhas; i++)
     {
@@ -24,7 +24,7 @@ void imprimir_matriz(char matriz[][100], int no_linhas, int no_colunas)
     }
 }
 
-void procurar_leao(char matriz[][100], int no_linhas, int no_colunas)
+void procurar_leao(char matriz[][5], int no_linhas, int no_colunas)
 {
     for (int i = 0; i < no_linhas; i++)
     {
@@ -42,7 +42,7 @@ void procurar_leao(char matriz[][100], int no_linhas, int no_colunas)
 }
 // function that represent the matrix
 
-int jogo(char arena[][100], int no_linhas, int no_colunas)
+int jogo(char arena[][5], int no_linhas, int no_colunas)
 {
     int pontuacao_condenador = 0, pontuacao_gladiador = 0;
     for (int i = 0; i < no_linhas; i++)
@@ -84,7 +84,7 @@ int jogo(char arena[][100], int no_linhas, int no_colunas)
 
 int main()
 {
-    char arena[100][100];
+    char arena[5][5];
     int n;
     cin >> n;
     ler_matriz(arena, n, n);
